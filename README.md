@@ -11,17 +11,16 @@ Ce dépôt contient les outils pour extraire, traduire et réinjecter les script
 ---
 
 ## 📺 Vidéo de gameplay
-🎬 **[Clique ici pour voir la vidéo](https://youtu.be/rGHRMPw-bbo?is=M01bmaMMkRTUOaKS)**
 
-![Miniature](https://img.youtube.com/vi/rGHRMPw-bbo/maxresdefault.jpg)
+[![Miniature de la vidéo](https://img.youtube.com/vi/rGHRMPw-bbo/maxresdefault.jpg)](https://youtu.be/rGHRMPw-bbo?si=vIguQ4_gXU1r-yoH)
 
 ---
 
 ## Avancement
 | Contenu               | Progression  |
 |-----------------------|--------------|
-| [Scripts (Dialogues Histoire)](https://github.com/chenetulipe/P2-FR-IS-PSP/tree/main/scripts)   |     318/396    |
-| [Autres Scripts (CD shop, Dialogues Carte)](https://github.com/chenetulipe/P2-FR-IS-PSP/tree/main/AutreScript)  | 1/7 |
+| [Scripts (Dialogues Histoire)](https://github.com/chenetulipe/P2-FR-IS-PSP/tree/main/scripts)   |     ✅    |
+| [Autres Scripts (CD shop, Dialogues Carte)](https://github.com/chenetulipe/P2-FR-IS-PSP/tree/main/AutreScript)  | 8/9 |
 | Police (accents FR)   |      ✅      |
 | Textures HD        | 35/42 |
 | ...                   | 🔄 |
