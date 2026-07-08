@@ -317,7 +317,7 @@
     "nom_orig": "Onlooker",
     "texte_orig": "I[SP]heard[SP]Muses[SP]is[SP]here.[SP]Isn't[SP]Ginji[SP]Sasaki\nproducing[SP]them?",
     "nom_fr": "Spectateur",
-    "texte_fr": "Les Muses sont là.\nC'est Ginji Sasaki qui les diriges ?"
+    "texte_fr": "Les Muses sont là. C'est\nGinji Sasaki qui les diriges ?"
   },
   {
     "id": 20,
@@ -397,7 +397,7 @@
     "nom_orig": "Onlooker",
     "texte_orig": "Is[SP]it[SP]true[SP]that[SP]Muses[SP]is[SP]here?[SP]So[SP]does\nthat[SP]mean[SP]we[SP]get[SP]to[SP]see[SP]the[SP]third[SP]girl?",
     "nom_fr": "Spectateur",
-    "texte_fr": "C'est vrai que les Muses sont là ?\nDonc on va voir la troisième fille ?"
+    "texte_fr": "C'est vrai que les Muses est là ?\nDonc on va voir la troisième fille ?"
   },
   {
     "id": 25,
