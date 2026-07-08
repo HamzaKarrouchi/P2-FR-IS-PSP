@@ -1,193 +1,142 @@
-## 📺 Vidéo de présentation
-🎬 **[Clique ici pour voir la vidéo](https://youtu.be/wxEEJYjx2Sw)**
+<div align="center">
+  
+# Guide Développeur & Base de Connaissances
+  
+**Persona 2: Innocent Sin FR (PSP)**
 
-![Miniature](https://img.youtube.com/vi/wxEEJYjx2Sw/maxresdefault.jpg)
+<br/>
 
----
+<img src="https://img.shields.io/badge/Statut-Documentation_Technique-0366d6?style=for-the-badge" alt="Statut" />
+<img src="https://img.shields.io/badge/Reverse_Engineering-Atlus_%2F_CRI-d73a49?style=for-the-badge" alt="Reverse Engineering" />
 
-# 🛠️ Toolkit de Traduction
+</div>
 
-Ce document explique comment fonctionne `p2is_fr_tool.py`, utile pour extraire, traduire et reconstruire l'ISO de Persona 2: Innocent Sin.
+<br/>
 
----
+> [!NOTE]
+> Bienvenue dans la documentation technique exhaustive du projet. Ce document s'adresse aux développeurs, programmeurs et romhackers. Il détaille l'architecture de notre outil de compilation maison (`p2is_tool`), les spécificités du moteur Atlus et le fonctionnement des archives CRI Middleware.
 
-## ⚙️ Pipeline complet
-
-```
-ISO (ULES01557)
-    │
-    ▼  extract_cpk_from_iso()
-P2PT_ALL.cpk
-    │
-    ▼  extract_event_from_cpk()
-event.bin
-    │
-    ▼  extract_scripts_from_event()
-script_000.bin … script_398.bin
-    │
-    ▼  decode_all_scripts()
-script_000.json … script_398.json   ← ✏️ on traduit ici
-    │
-    ▼  validate_all_scripts()        ← 🔍 vérification cohérence menus (optionnel)
-    │
-    ▼  encode_all()
-script_000_fr.bin … script_398_fr.bin
-    │
-    ▼  rebuild_iso()
-ISO traduite ✅
-```
+<br/>
 
 ---
 
-## 🗂️ Structure interne d'un slot JSON
+## Sommaire
+1. [La Stack Technique (V2)](#la-stack-technique-v2)
+2. [Architecture et Pipeline de Compilation](#architecture-et-pipeline-de-compilation)
+3. [Gestion Mémoire et Algorithme du Delta](#gestion-mémoire-et-algorithme-du-delta)
+4. [Opcodes et Bytecode Atlus](#opcodes-et-bytecode-atlus)
+5. [Structure Modulaire du Code Source](#structure-modulaire-du-code-source)
 
-`find_dialogs()` extrait chaque dialogue du binaire et produit cette structure :
-
-**Slot normal :**
-```json
-{
-  "id": 1,
-  "offset": 389018,
-  "data_size": 156,
-  "slot_size": 160,
-  "_term": [4361, 4354, 4355, 5169],
-  "nom_orig": "Ms.[SP]Saeko",
-  "texte_orig": "Don't[SP]worry,[SP]guidance[SP]counseling...",
-  "nom_fr": "Mme Saeko",
-  "texte_fr": "T'inquiète pas, l'entretien d'orientation..."
-}
-```
-
-**Slot avec menu de choix** (champs supplémentaires générés par `_parse_choices()`) :
-```json
-{
-  "id": 3,
-  "nom_orig": "Ms.[SP]Saeko",
-  "texte_orig": "Have[SP]you[SP]decided...\\n[1208][0002]...[0014]Yeah.[0014]\\n...[0014]Not[SP]yet.[0014]",
-  "nom_fr": "Mme Saeko",
-  "texte_fr": "...",
-  "question_orig": "Have[SP]you[SP]decided[SP]what[SP]you[SP]want[SP]to[SP]do\\nafter[SP]graduation?",
-  "choix_orig": ["Yeah,[SP]I've[SP]decided.", "Not[SP]yet."],
-  "question_fr": "T'as une idée de ce que tu veux faire\naprès le lycée ?",
-  "choix_fr": ["Ouais, j'ai décidé.", "Pas encore."]
-}
-```
-
-> L'encodeur (`encode_bin_from_json`) lit `question_fr`/`choix_fr` en priorité et reconstruit `texte_fr` via `_rebuild_choice_body()`. `texte_fr` peut rester rempli, il sert de fallback si les nouveaux champs sont vides.
+<br/>
 
 ---
 
-## 🔧 Fonctions clés
+## La Stack Technique (V2)
 
-| Fonction | Rôle |
-|---|---|
-| `extract_cpk_from_iso()` | Extrait `P2PT_ALL.cpk` depuis l'ISO |
-| `extract_event_from_cpk()` | Extrait `event.bin` depuis le CPK |
-| `extract_scripts_from_event()` | Découpe `event.bin` en `script_XXX.bin` |
-| `find_dialogs(data)` | Parse un `.bin` et retourne la liste des slots JSON |
-| `_parse_choices(body)` | Extrait `question_orig`/`choix_orig` depuis un texte de menu |
-| `migrate_choices_in_json(entries)` | Peuple `question_fr`/`choix_fr` à partir de `texte_fr` existants |
-| `decode_all_scripts()` | Appelle `find_dialogs()` sur tous les `.bin` → JSON |
-| `check_menu_consistency(json_path)` | Vérifie la cohérence intro/menu pour un fichier |
-| `validate_all_scripts()` | Lance `check_menu_consistency()` sur tous les JSON |
-| `_align_menu_text()` | Insère du padding SP pour aligner les options sur leurs offsets originaux |
-| `encode_bin_from_json()` | Réécrit un `.bin` depuis un JSON traduit |
-| `encode_all()` | Encode tous les JSON traduits en `.bin` |
-| `rebuild_event_bin()` | Réinjecte les `.bin` FR dans `event.bin` |
-| `rebuild_iso()` | Génère l'ISO finale traduite |
+L'outil de romhacking a été restructuré en une application web locale performante, asynchrone et modulaire.
 
----
+<div align="left">
+  <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Langage-Python-3670A0?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Frontend-React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+</div>
 
-## ⚠️ Contraintes techniques des menus de choix
+<br/>
 
-### 1. NL de fin de menu
-Le moteur PSP Atlus exige un `NL` (0x1101) juste avant le terminateur de chaque slot de menu. `encode_bin_from_json()` l'insère automatiquement, ne pas le mettre manuellement dans `texte_fr`.
+* ✦ **Backend :** L'API se charge de la décompression, de l'analyse (parsing) et de la recompilation de l'ISO en manipulant directement les flux hexadécimaux.
+* ✦ **Frontend :** Une interface utilisateur réactive fournissant des retours visuels en temps réel.
+* ✦ **Déploiement Automatisé :** L'application est orchestrée via le fichier `start.bat` qui installe de façon autonome les dépendances nécessaires.
 
-### 2. Alignement des offsets
-Le moteur PSP stocke des **pointeurs absolus** vers chaque option de menu dans le bytecode compressé. `_align_menu_text()` insère automatiquement des `[SP]` invisibles entre la question FR et `[1208]` pour que les options restent aux mêmes offsets que dans le binaire original.
+**Dépendance Externe : CriFsLib**<br/>
+L'extraction de l'archive principale du jeu (`P2PT_ALL.cpk`, environ 800 Mo) est déléguée à l'exécutable tiers `CriFsLib.GUI.exe` (développé par Sewer56). Ce choix garantit une extraction rapide et sécurisée du système de fichiers propriétaire de CRI Middleware.
 
-Si la question FR est **plus longue** que l'originale anglaise, un warning est loggé :
-```
-⚠ [id 5] question FR trop longue de 1 mot(s) → les choix seront décalés ! Raccourcir la question.
-```
-
-### 3. Cohérence intro/menu
-Le moteur affiche les menus en deux temps :
-- **slot N** : le personnage pose la question (dialogue normal)
-- **slot N+1** : même question répétée + les choix `[1208]`
-
-`validate_all_scripts()` détecte les incohérences entre les deux formulations et les reporte :
-```
-script_001.json : 3 incohérence(s) détectée(s)
-  ⚠ id=2 (intro) ne se termine pas par la question de id=3
-```
+<br/>
 
 ---
 
-## 🔤 Encodage des accents
+## Architecture et Pipeline de Compilation
 
-Les accents français sont remappés vers des glyphes japonais disponibles dans la police du jeu via `ACCENT_MAP` :
+Le traitement automatisé de l'ISO s'articule autour de quatre phases :
 
-| Français | Remappé |
-|---|---|
-| `é è ê` | `Ğ ò ¿` |
-| `ô œ ü ï` | `Æ ë ˠ Ȗ` |
-| `É È Î Ô Û` | `Ņ Ũ £ ō ĵ` |
-| `Œ` | `Ǩ` |
+<details>
+<summary><b>► 1. Extraction</b></summary>
+<ul>
+<li>Isolement du fichier <code>P2PT_ALL.cpk</code> depuis l'ISO originale.</li>
+<li>Appel à CriFsLib pour dépaqueter l'archive.</li>
+<li>Décompression LZSS (algorithme <code>CRILAYLA</code>) des fichiers vitaux tels que <code>event.bin</code>.</li>
+<li>Découpage séquentiel des scripts (<code>script_000.bin</code> à <code>script_398.bin</code>).</li>
+</ul>
+</details>
 
-Tout autre caractère non listé dans `ACCENT_MAP` est encodé en UTF-16 LE brut, si le glyphe n'existe pas dans la police du jeu, il s'affiche incorrectement.
+<details>
+<summary><b>► 2. Décodage (Parsing)</b></summary>
+<ul>
+<li>L'API analyse le bytecode propriétaire d'Atlus et sépare les opcodes du texte original.</li>
+<li>Génération de fichiers <code>.json</code> clairs et normalisés destinés à la traduction.</li>
+</ul>
+</details>
 
----
+<details>
+<summary><b>► 3. Encodage (Injection)</b></summary>
+<ul>
+<li>Lecture et validation des données JSON traduites.</li>
+<li>Application du remappage des accents français vers les ID VRAM.</li>
+<li><b>Recalcul dynamique des tables de pointeurs absolus</b> afin d'accommoder les variations de longueur de texte.</li>
+<li>Génération des nouveaux fichiers binaires modifiés.</li>
+</ul>
+</details>
 
-## 🔍 Validation (`validate_all_scripts`)
+<details>
+<summary><b>► 4. Rebuild (Compilation ISO)</b></summary>
+<ul>
+<li>Recompression LZSS des nouveaux scripts.</li>
+<li>Réinjection dans le CPK et actualisation stricte de la TOC (Table Of Contents).</li>
+<li>Patch LBA (Logical Block Addressing) de l'ISO 9660 : déplacement des secteurs de l'archive modifiée à la fin de l'image disque.</li>
+</ul>
+</details>
 
-```python
-result = validate_all_scripts("traduction/event_scripts/", log_fn=print)
-# retourne : {"total_files": int, "files_with_issues": int, "problems": list}
-```
-
-Chaque problème dans `problems` contient :
-```python
-{
-    "file": "script_001.json",
-    "intro_id": 2,
-    "menu_id": 3,
-    "q_menu": "T'as une idée...",
-    "intro_end": "Bien, commençons !..."
-}
-```
-
----
-
-## 🚀 Installation
-```bash
-git clone https://github.com/chenetulipe/P2-FR-IS-PSP
-cd P2-FR-IS-PSP
-pip install customtkinter
-python p2is_fr_tool.py
-```
-
----
-
-## 🖥️ Utilisation
-Lance `p2is_fr_tool.py` et suis les 3 onglets dans l'ordre :
-1. **Pipeline Extraction** charge ton ISO et extrait les scripts en JSON
-2. **Traduction** encode tes JSON traduits en `.bin`
-3. **Rebuild ISO** réinjecte tout et génère l'ISO FR jouable
+<br/>
 
 ---
 
-## 🧰 Outils du projet
-- [JsonVerify](https://github.com/Garloulou/JsonVerify) par **@Garloulou** - validation des fichiers JSON traduits
+## Gestion Mémoire et Algorithme du Delta
 
-## 🔩 Outils tiers utilisés
-- [UMDGen](https://www.romhacking.net/utilities/1218/) - manipulation ISO PSP
-- [CriFsLib](https://github.com/Sewer56/CriFsV2Lib) - extraction CPK
-- [PPSSPP](https://www.ppsspp.org/) - émulation PSP pour les tests
+Le moteur de jeu Atlus gère la mémoire différemment selon le type de fichier, imposant des contraintes d'injection drastiques.
+
+| Fichier Cible | Gestion des Pointeurs | Contrainte Technique Majeure |
+|:---|:---|:---|
+| **`event.bin`** | Table d'Offsets Absolus | Le moindre décalage provoque un crash immédiat. Le script reconstruit la table entière (offsets absolus et longueurs) à chaque compilation. |
+| **`F_BE.BNP`** | Scanner Séquentiel (Combat) | L'ajout d'octets de padding (remplissage `00`) provoque un Invalid Memory Access (Crash Philémon). **L'Algorithme du Delta** est utilisé pour compacter l'espace binaire de manière purement séquentielle. |
+
+<br/>
 
 ---
 
-## 📚 Inspirations & Références
-- [P2-EP-PSP](https://github.com/sayucchin/P2-EP-PSP) : par **sayucchin & équipe**
-  projet de traduction de Persona 2: Eternal Punishment PSP.
-  L'analyse de leur code source (`event.rs`, `main.rs`) nous a permis de comprendre la structure de `event.bin` (gzip + table d'offsets). Nos outils ont été développés indépendamment en Python.
+## Opcodes et Bytecode Atlus
+
+Le moteur lit des opcodes de contrôle spécifiques que l'outil de parsing convertit en balises textuelles (`[TAG]`) pour les protéger lors de la traduction :
+
+| Opcode Hex (Little Endian) | Tag Python | Fonction In-Game |
+|:---:|:---:|:---|
+| `00 22` | `[START]` | Initialise une nouvelle chaîne de caractères en mémoire. |
+| `11 07` | `[END]` | Termine la chaîne et réinitialise le buffer d'affichage. |
+| `11 01` | `[NL]` | Applique un retour à la ligne. |
+| `12 08` | `[CHOICE]` | Affiche les options d'un menu contextuel. |
+| `14 31` | `[ANIM]` | Déclenche un événement lié à l'animation ou à l'UI (ex. visages). |
+| `02 11` | `[WAIT]` | Instruction de pause (historiquement responsable de crashs si mal positionnée). |
+
+<br/>
+
+---
+
+## Structure Modulaire du Code Source
+
+Le backend Python localisé dans `p2is_tool/src/` suit une séparation stricte des responsabilités :
+
+* ✦ **`core/iso.py`** : Manipulation directe de l'ISO 9660, extraction des secteurs et patching LBA.
+* ✦ **`core/text.py`** : Moteur de conversion String ↔ Shift-JIS Atlus et intégration de la table `ACCENT_MAP`.
+* ✦ **`core/compression.py`** : Logique bas niveau des algorithmes de décompression LZSS propriétaire `CRILAYLA`.
+* ✦ **`parsers/`** : Scripts spécialisés dans l'heuristique de détection de texte (ex. `bin_parser.py`).
+* ✦ **`encoders/`** : Logique d'assemblage binaire, de reconstruction des tables de pointeurs et d'application de l'Algorithme du Delta.
+
+<!-- updated -->
