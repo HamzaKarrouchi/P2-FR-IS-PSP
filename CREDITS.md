@@ -49,8 +49,8 @@ Grâce à un robot (GitHub Action) qui tourne toutes les nuits, ce classement et
 | Contributeur | 💾 Commits | ➕ Lignes Ajoutées | ➖ Lignes Supprimées |
 |:---|:---:|:---:|:---:|
 | **[@HamzaKarrouchi](https://github.com/HamzaKarrouchi)** | 413 | +258448 | -35647 |
-| **[@chenetulipe](https://github.com/chenetulipe)** | 220 | +187530 | -178972 |
-| **[@claude](https://github.com/claude)** | 194 | +230413 | -8366 |
+| **[@chenetulipe](https://github.com/chenetulipe)** | 226 | +188455 | -178996 |
+| **[@claude](https://github.com/claude)** | 195 | +230575 | -8528 |
 | **[@Garloulou](https://github.com/Garloulou)** | 49 | +767 | -515 |
 | **[@Bicyclarv](https://github.com/Bicyclarv)** | 46 | +3311 | -3311 |
 | **[@hvnjo](https://github.com/hvnjo)** | 42 | +2675 | -2676 |
@@ -60,12 +60,12 @@ Grâce à un robot (GitHub Action) qui tourne toutes les nuits, ce classement et
 | **[@megidooo](https://github.com/megidooo)** | 18 | +386 | -386 |
 | **[@Gyotre](https://github.com/Gyotre)** | 16 | +355 | -352 |
 | **[@LeSoupeur](https://github.com/LeSoupeur)** | 15 | +163 | -163 |
+| **[@github-actions[bot]](https://github.com/github-actions[bot])** | 13 | +249 | -252 |
 | **[@ArsenetheIV](https://github.com/ArsenetheIV)** | 13 | +5584 | -6883 |
-| **[@github-actions[bot]](https://github.com/github-actions[bot])** | 12 | +225 | -228 |
 | **[@Tausc0](https://github.com/Tausc0)** | 12 | +62 | -62 |
-| **[@FrankoPaulo](https://github.com/FrankoPaulo)** | 9 | +117 | -117 |
-| **[@Seb180212](https://github.com/Seb180212)** | 9 | +155 | -152 |
 | **[@vkt2rii](https://github.com/vkt2rii)** | 9 | +308 | -309 |
+| **[@Seb180212](https://github.com/Seb180212)** | 9 | +155 | -152 |
+| **[@FrankoPaulo](https://github.com/FrankoPaulo)** | 9 | +117 | -117 |
 | **[@IssaPagi](https://github.com/IssaPagi)** | 9 | +85 | -85 |
 | **[@Ethan-LDS](https://github.com/Ethan-LDS)** | 7 | +169 | -169 |
 | **[@All4nRL](https://github.com/All4nRL)** | 6 | +61 | -61 |
@@ -101,8 +101,8 @@ Grâce à un robot (GitHub Action) qui tourne toutes les nuits, ce classement et
 ```mermaid
 pie title Top 10 - Commits
     "HamzaKarrouchi" : 413
-    "chenetulipe" : 220
-    "claude" : 194
+    "chenetulipe" : 226
+    "claude" : 195
     "Garloulou" : 49
     "Bicyclarv" : 46
     "hvnjo" : 42
@@ -116,8 +116,8 @@ pie title Top 10 - Commits
 ```mermaid
 pie title Top 10 - Lignes Ajoutées
     "HamzaKarrouchi" : 258448
-    "claude" : 230413
-    "chenetulipe" : 187530
+    "claude" : 230575
+    "chenetulipe" : 188455
     "ArsenetheIV" : 5584
     "Bicyclarv" : 3311
     "hvnjo" : 2675
@@ -130,9 +130,9 @@ pie title Top 10 - Lignes Ajoutées
 #### Lignes Supprimées
 ```mermaid
 pie title Top 10 - Lignes Supprimées
-    "chenetulipe" : 178972
+    "chenetulipe" : 178996
     "HamzaKarrouchi" : 35647
-    "claude" : 8366
+    "claude" : 8528
     "ArsenetheIV" : 6883
     "Bicyclarv" : 3311
     "hvnjo" : 2676
