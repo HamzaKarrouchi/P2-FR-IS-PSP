@@ -57,15 +57,15 @@ Grâce à un robot (GitHub Action) qui tourne toutes les nuits, ce classement et
 | **[@gc-ultimate117](https://github.com/gc-ultimate117)** | 26 | +1503 | -1503 |
 | **[@Fan2Shrek](https://github.com/Fan2Shrek)** | 22 | +395 | -356 |
 | **[@ZePhyrOmZy](https://github.com/ZePhyrOmZy)** | 19 | +403 | -403 |
-| **[@github-actions[bot]](https://github.com/github-actions[bot])** | 18 | +288 | -291 |
+| **[@github-actions[bot]](https://github.com/github-actions[bot])** | 19 | +290 | -293 |
 | **[@megidooo](https://github.com/megidooo)** | 18 | +386 | -386 |
 | **[@Gyotre](https://github.com/Gyotre)** | 16 | +355 | -352 |
 | **[@LeSoupeur](https://github.com/LeSoupeur)** | 15 | +163 | -163 |
 | **[@ArsenetheIV](https://github.com/ArsenetheIV)** | 13 | +5584 | -6883 |
 | **[@Tausc0](https://github.com/Tausc0)** | 12 | +62 | -62 |
-| **[@vkt2rii](https://github.com/vkt2rii)** | 9 | +308 | -309 |
-| **[@Seb180212](https://github.com/Seb180212)** | 9 | +155 | -152 |
 | **[@FrankoPaulo](https://github.com/FrankoPaulo)** | 9 | +117 | -117 |
+| **[@Seb180212](https://github.com/Seb180212)** | 9 | +155 | -152 |
+| **[@vkt2rii](https://github.com/vkt2rii)** | 9 | +308 | -309 |
 | **[@IssaPagi](https://github.com/IssaPagi)** | 9 | +85 | -85 |
 | **[@Ethan-LDS](https://github.com/Ethan-LDS)** | 7 | +169 | -169 |
 | **[@All4nRL](https://github.com/All4nRL)** | 6 | +61 | -61 |
@@ -109,7 +109,7 @@ pie title Top 10 - Commits
     "gc-ultimate117" : 26
     "Fan2Shrek" : 22
     "ZePhyrOmZy" : 19
-    "github-actions[bot]" : 18
+    "github-actions[bot]" : 19
 ```
 
 #### Lignes Ajoutées
