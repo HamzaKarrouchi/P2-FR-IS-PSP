@@ -56,44 +56,44 @@ Grâce à un robot (GitHub Action) qui tourne toutes les nuits, ce classement et
 | **[@hvnjo](https://github.com/hvnjo)** | 42 | +2675 | -2676 |
 | **[@gc-ultimate117](https://github.com/gc-ultimate117)** | 26 | +1503 | -1503 |
 | **[@Fan2Shrek](https://github.com/Fan2Shrek)** | 22 | +395 | -356 |
-| **[@github-actions[bot]](https://github.com/github-actions[bot])** | 20 | +310 | -313 |
+| **[@github-actions[bot]](https://github.com/github-actions[bot])** | 19 | +290 | -293 |
 | **[@ZePhyrOmZy](https://github.com/ZePhyrOmZy)** | 19 | +403 | -403 |
 | **[@megidooo](https://github.com/megidooo)** | 18 | +386 | -386 |
 | **[@Gyotre](https://github.com/Gyotre)** | 16 | +355 | -352 |
 | **[@LeSoupeur](https://github.com/LeSoupeur)** | 15 | +163 | -163 |
 | **[@ArsenetheIV](https://github.com/ArsenetheIV)** | 13 | +5584 | -6883 |
 | **[@Tausc0](https://github.com/Tausc0)** | 12 | +62 | -62 |
-| **[@FrankoPaulo](https://github.com/FrankoPaulo)** | 9 | +117 | -117 |
 | **[@Seb180212](https://github.com/Seb180212)** | 9 | +155 | -152 |
-| **[@vkt2rii](https://github.com/vkt2rii)** | 9 | +308 | -309 |
+| **[@FrankoPaulo](https://github.com/FrankoPaulo)** | 9 | +117 | -117 |
 | **[@IssaPagi](https://github.com/IssaPagi)** | 9 | +85 | -85 |
+| **[@vkt2rii](https://github.com/vkt2rii)** | 9 | +308 | -309 |
 | **[@Ethan-LDS](https://github.com/Ethan-LDS)** | 7 | +169 | -169 |
 | **[@All4nRL](https://github.com/All4nRL)** | 6 | +61 | -61 |
 | **[@chaytheninja](https://github.com/chaytheninja)** | 5 | +100 | -99 |
 | **[@MBG-May](https://github.com/MBG-May)** | 4 | +185 | -184 |
-| **[@aurelien30](https://github.com/aurelien30)** | 4 | +132 | -132 |
 | **[@Kain-Highwind](https://github.com/Kain-Highwind)** | 4 | +281 | -281 |
+| **[@aurelien30](https://github.com/aurelien30)** | 4 | +132 | -132 |
+| **[@driftbyte4767](https://github.com/driftbyte4767)** | 3 | +284 | -284 |
 | **[@Shrenpai](https://github.com/Shrenpai)** | 3 | +123 | -123 |
 | **[@ZeldarioGitHub](https://github.com/ZeldarioGitHub)** | 3 | +53 | -53 |
-| **[@driftbyte4767](https://github.com/driftbyte4767)** | 3 | +284 | -284 |
-| **[@Door-dono](https://github.com/Door-dono)** | 2 | +39 | -39 |
-| **[@Astakoune](https://github.com/Astakoune)** | 2 | +65 | -65 |
+| **[@Aniy22](https://github.com/Aniy22)** | 2 | +25 | -25 |
+| **[@LykeSama](https://github.com/LykeSama)** | 2 | +33 | -33 |
+| **[@Diamondssb](https://github.com/Diamondssb)** | 2 | +45 | -45 |
+| **[@Neth6767](https://github.com/Neth6767)** | 2 | +85 | -85 |
 | **[@Sammmu-L](https://github.com/Sammmu-L)** | 2 | +22 | -22 |
+| **[@Astakoune](https://github.com/Astakoune)** | 2 | +65 | -65 |
+| **[@Door-dono](https://github.com/Door-dono)** | 2 | +39 | -39 |
 | **[@nekorighthere](https://github.com/nekorighthere)** | 2 | +86 | -86 |
 | **[@chenetulipe2](https://github.com/chenetulipe2)** | 2 | +6 | -6 |
-| **[@Diamondssb](https://github.com/Diamondssb)** | 2 | +45 | -45 |
-| **[@LykeSama](https://github.com/LykeSama)** | 2 | +33 | -33 |
-| **[@Aniy22](https://github.com/Aniy22)** | 2 | +25 | -25 |
-| **[@Neth6767](https://github.com/Neth6767)** | 2 | +85 | -85 |
 | **[@Xeriam](https://github.com/Xeriam)** | 2 | +56 | -56 |
-| **[@Aurinox6](https://github.com/Aurinox6)** | 1 | +59 | -59 |
-| **[@Desseday](https://github.com/Desseday)** | 1 | +123 | -123 |
-| **[@Lomac29](https://github.com/Lomac29)** | 1 | +20 | -20 |
-| **[@mae7interludes](https://github.com/mae7interludes)** | 1 | +109 | -109 |
-| **[@Adwara](https://github.com/Adwara)** | 1 | +130 | -130 |
-| **[@Goulyz](https://github.com/Goulyz)** | 1 | +27 | -27 |
-| **[@renaclerican](https://github.com/renaclerican)** | 1 | +29 | -29 |
 | **[@MaelMinhAnh](https://github.com/MaelMinhAnh)** | 1 | +77 | -77 |
+| **[@Aurinox6](https://github.com/Aurinox6)** | 1 | +59 | -59 |
+| **[@renaclerican](https://github.com/renaclerican)** | 1 | +29 | -29 |
+| **[@Goulyz](https://github.com/Goulyz)** | 1 | +27 | -27 |
+| **[@Lomac29](https://github.com/Lomac29)** | 1 | +20 | -20 |
+| **[@Adwara](https://github.com/Adwara)** | 1 | +130 | -130 |
+| **[@mae7interludes](https://github.com/mae7interludes)** | 1 | +109 | -109 |
+| **[@Desseday](https://github.com/Desseday)** | 1 | +123 | -123 |
 
 ### Répartition des Contributions (Top 10)
 
@@ -108,7 +108,7 @@ pie title Top 10 - Commits
     "hvnjo" : 42
     "gc-ultimate117" : 26
     "Fan2Shrek" : 22
-    "github-actions[bot]" : 20
+    "github-actions[bot]" : 19
     "ZePhyrOmZy" : 19
 ```
 
@@ -146,9 +146,9 @@ pie title Top 10 - Lignes Supprimées
 
 ---
 
-## Bêta-Testeurs & Traqueurs de Bugs (BÊTA du 10 Juillet)
+## Bêta-Testeurs & Traqueurs de Bugs (BÊTA de Juillet 2026)
 
-*Cette section se remplira à partir de la sortie de la BÊTA le 10 juillet 2026 !*
+*Cette section se remplira au fur et à mesure grâce aux retours des joueurs sur la BÊTA !*
 
 Un immense merci à tous les joueurs de l'ombre qui parcourent le jeu de fond en comble pour nous remonter la moindre faute de frappe, erreur de césure, ou plantage technique. Votre œil de lynx permet de peaufiner la version finale !
 
