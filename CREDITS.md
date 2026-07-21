@@ -55,7 +55,7 @@ Grâce à un robot (GitHub Action) qui tourne toutes les nuits, ce classement et
 | **[@Bicyclarv](https://github.com/Bicyclarv)** | 46 | +3311 | -3311 |
 | **[@hvnjo](https://github.com/hvnjo)** | 42 | +2675 | -2676 |
 | **[@gc-ultimate117](https://github.com/gc-ultimate117)** | 26 | +1503 | -1503 |
-| **[@github-actions[bot]](https://github.com/github-actions[bot])** | 24 | +349 | -352 |
+| **[@github-actions[bot]](https://github.com/github-actions[bot])** | 23 | +331 | -334 |
 | **[@Fan2Shrek](https://github.com/Fan2Shrek)** | 22 | +395 | -356 |
 | **[@ZePhyrOmZy](https://github.com/ZePhyrOmZy)** | 19 | +403 | -403 |
 | **[@megidooo](https://github.com/megidooo)** | 18 | +386 | -386 |
@@ -107,7 +107,7 @@ pie title Top 10 - Commits
     "Bicyclarv" : 46
     "hvnjo" : 42
     "gc-ultimate117" : 26
-    "github-actions[bot]" : 24
+    "github-actions[bot]" : 23
     "Fan2Shrek" : 22
     "ZePhyrOmZy" : 19
 ```
