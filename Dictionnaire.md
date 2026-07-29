@@ -92,3 +92,4 @@
 
 <!-- updated -->
 Mr. Bunbun -> M. Lapinou
+Persona Game -> Jeu de la Persona

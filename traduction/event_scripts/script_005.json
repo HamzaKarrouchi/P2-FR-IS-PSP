@@ -317,7 +317,7 @@
     "nom_orig": "Joker",
     "texte_orig": "Impossible![1205][001E][SP]This[SP]can't[SP]be...[1205][001E][SP]How[SP]could\nthis[SP]happen!?",
     "nom_fr": "Joker",
-    "texte_fr": "Impossible![1205][001E] Pas possible...[1205][001E]\nComment ça se fait!?"
+    "texte_fr": "Impossible![1205][001E] Ça se peut pas...[1205][001E]\nComment ça se fait!?"
   },
   {
     "id": 20,
@@ -333,7 +333,7 @@
     "nom_orig": "Joker",
     "texte_orig": "What[SP]meaning[SP]is[SP]there[SP]in[SP]killing[SP]you\nif[SP]you[SP]do[SP]not[SP]remember!?",
     "nom_fr": "Joker",
-    "texte_fr": "Quel sens a de vous tuer si\nvous ne vous souvenez pas!?"
+    "texte_fr": "À quoi sert de vous tuer si vous en avez\noublié le motif!?"
   },
   {
     "id": 21,
@@ -365,7 +365,7 @@
     "nom_orig": "Joker",
     "texte_orig": "Let[SP]this[SP][E4][NULL][NULL][U+0006]Iris[E4][NULL][NULL][0002][SP]be[SP]my[SP]testament...[1205][001E][SP]Now[SP]go,\nand[SP]remember[SP]the[SP]sins[SP]you[SP]have[SP]committed!\nThen[SP]will[SP]I[SP]claim[SP]my[SP]revenge!",
     "nom_fr": "Joker",
-    "texte_fr": "Que cet [E4][NULL][NULL][U+0006]Iris[E4][NULL][NULL][0002] soit mon testament...[1205][001E]\nPartez, souvenez-vous de vos péchés!\nAlors seulement, j'aurai ma revanche!"
+    "texte_fr": "Que cet [E4][NULL][NULL][U+0006]Iris[E4][NULL][NULL][0002] soit mon testament...[1205][001E]\nPartez, souvenez-vous de vos péchés!\nAlors là seulement, j'aurai ma revanche!"
   },
   {
     "id": 23,
@@ -429,7 +429,7 @@
     "nom_orig": "Lisa",
     "texte_orig": "I[SP]can't[SP]believe[SP]Joker[SP]is[SP]real...[1205][001E]\nBut[SP]why[SP]does[SP]he[SP]want[SP]revenge[SP]on[SP]us?",
     "nom_fr": "Lisa",
-    "texte_fr": "Le Joker est bien réel...[1205][001E] Mais\npourquoi nous en veut-il?"
+    "texte_fr": "Joker est bien réel...[1205][001E] Mais\npourquoi nous en veut-il?"
   },
   {
     "id": 27,
@@ -445,7 +445,7 @@
     "nom_orig": "Lisa",
     "texte_orig": "We'll[SP]be[SP]safer[SP]if[SP]we[SP]stick[SP]close!\nC'mon,[SP][1113].[SP]Let's[SP]chase[SP]him[SP]down\ntogether,[SP]okay?",
     "nom_fr": "Lisa",
-    "texte_fr": "On est plus sûrs ensemble! Viens, [1113].\nOn va le traquer tous ensemble, d'accord?"
+    "texte_fr": "On sera plus en sécurité tous les deux!\nAllez, [1113]. On va le traquer ensemble, ok?"
   },
   {
     "id": 28,
@@ -509,7 +509,7 @@
     "nom_orig": "Eikichi",
     "texte_orig": "We've[SP]both[SP]been[SP]called[SP]out[SP]on[SP]a[SP]grudge\nwe[SP]know[SP]nothing[SP]about.[SP]Let's[SP]call[SP]a[SP]truce\nuntil[SP]that[SP]guy's[SP]out[SP]of[SP]the[SP]picture.[1205][001E]",
     "nom_fr": "Eikichi",
-    "texte_fr": "On nous accuse tous deux pour une\nrancœur inconnue. Trêve entre nous\njusqu'à ce que ce type[1205][U+000F] soit hors jeu.[1205][001E]"
+    "texte_fr": "On nous accuse tous deux pour une\nrancœur inconnue. Faisons une trêve\njusqu'à ce que ce type[1205][U+000F] soit hors jeu.[1205][U+000F]"
   },
   {
     "id": 32,
@@ -541,7 +541,7 @@
     "nom_orig": "Ken",
     "texte_orig": "My...[SP]dream...?[1205][001E][SP]I[SP]don't[SP]care[SP]anymore...[1205][001E]\nIt's[SP]not[SP]like[SP]it'll...",
     "nom_fr": "Ken",
-    "texte_fr": "Mon... rêve...?[1205][001E] Je m'en fiche\nplus...[1205][001E] C'est pas comme si..."
+    "texte_fr": "Mon rêve...?[1205][U+000F] J'en ai... plus rien à faire...[1205][U+000F]\nIl va jamais..."
   },
   {
     "id": 34,
@@ -701,6 +701,6 @@
     "nom_orig": "Kozy",
     "texte_orig": "Something[SP]about[SP]the[SP]owner[SP]being[SP]a[SP]former\nspy...[1205][001E][SP]With[SP]everything[SP]that's[SP]going[SP]on,\nwhy[SP]not[SP]start[SP]there?",
     "nom_fr": "Kozy",
-    "texte_fr": "Le proprio serait un ancien\nespion...[1205][001E] Avec tout ce qui se passe,\npourquoi pas commencer par là?"
+    "texte_fr": "La proprio serait une ancienne\nespionne...[1205][001E] Avec tout ce qui se passe,\npourquoi pas commencer par là?"
   }
 ]

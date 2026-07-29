@@ -13,7 +13,7 @@
     "nom_orig": "Philemon",
     "texte_orig": "Welcome[SP]to[SP]the[SP]gulf[SP]between[SP]consciousness\nand[SP]unconsciousness...[1205][001E][SP]My[SP]name[SP]is[SP]Philemon.[1205][001E]\nHave[SP]you[SP]forgotten?",
     "nom_fr": "Philémon",
-    "texte_fr": "Bienvenue dans l'abîme entre\nconscience et inconscience...[1205][001E] Mon\nnom est Philémon.[1205][001E] Avez-vous oublié?"
+    "texte_fr": "Bienvenue dans l'abîme entre\nconscience et inconscience...[1205][001E] Mon\nnom est Philémon.[1205][001E] Vous en souvenez-vous?"
   },
   {
     "id": 1,
@@ -61,7 +61,7 @@
     "nom_orig": "Philemon",
     "texte_orig": "The[SP]self[SP]suffused[SP]with[SP]divine[SP]love...[1205][001E]\nThe[SP]self[SP]capable[SP]of[SP]demonic[SP]cruelty...[1205][001E]\nPeople[SP]live[SP]by[SP]wearing[SP]different[SP]masks.",
     "nom_fr": "Philémon",
-    "texte_fr": "Le moi baigné d'amour divin...[1205][001E] Le moi\ncapable de cruauté démoniaque...[1205][001E] Les\ngens vivent en portant des masques."
+    "texte_fr": "Le soi baigné d'amour divin...[1205][001E] Le soi\ncapable de cruauté démoniaque...[1205][001E] Les\ngens vivent en portant des masques."
   },
   {
     "id": 4,
@@ -77,7 +77,7 @@
     "nom_orig": "Philemon",
     "texte_orig": "Your[SP]current[SP]self[SP]is[SP]only[SP]one[SP]of[SP]these\ninnumerable[SP]masks.[SP]Your[SP]Persona[SP]is[SP]also\namong[SP]your[SP]countless[SP]selves.",
     "nom_fr": "Philémon",
-    "texte_fr": "Votre moi actuel n'est qu'un de ces\ninnombrables masques. Votre Persona\nest une de vos multiples facettes."
+    "texte_fr": "Votre soi actuel n'est qu'un de ces\ninnombrables masques. Votre Persona\nest une de vos multiples facettes."
   },
   {
     "id": 5,
