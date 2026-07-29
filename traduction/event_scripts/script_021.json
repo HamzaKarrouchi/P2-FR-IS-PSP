@@ -13,7 +13,7 @@
     "nom_orig": "Maya",
     "texte_orig": "The[SP]compass[SP]is[SP]off...[1205][001E][SP]My[SP]sense[SP]of[SP]direction\nfeels[SP]out[SP]of[SP]whack,[SP]too.[SP]If[SP]we[SP]didn't[SP]have\nany[SP]light,[SP]we'd[SP]be[SP]lost[SP]for[SP]sure.",
     "nom_fr": "Maya",
-    "texte_fr": "Boussole HS...[1205][001E] Mon sens de\nl'orientation aussi. Sans lumière,\non serait perdus depuis longtemps."
+    "texte_fr": "La boussole est HS...[1205][001E] Mon sens de\nl'orientation aussi. Sans lumière,\non serait perdus depuis longtemps."
   },
   {
     "id": 1,
@@ -29,7 +29,7 @@
     "nom_orig": "Maya",
     "texte_orig": "No[SP]one[SP]knows[SP]where[SP]the[SP]exit[SP]is,[SP]huh...?[1205][001E]\nNo[SP]one[SP]knows...[SP]Hmm...",
     "nom_fr": "Maya",
-    "texte_fr": "Personne ne sait où est la sortie...[1205][001E] Hmm..."
+    "texte_fr": "Personne ne sait où est la sortie...[1205][001E] Persone ne sait... Hmm..."
   },
   {
     "id": 2,
