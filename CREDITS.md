@@ -49,7 +49,7 @@ Grâce à un robot (GitHub Action) qui tourne toutes les nuits, ce classement et
 | Contributeur | 💾 Commits | ➕ Lignes Ajoutées | ➖ Lignes Supprimées |
 |:---|:---:|:---:|:---:|
 | **[@HamzaKarrouchi](https://github.com/HamzaKarrouchi)** | 413 | +258448 | -35647 |
-| **[@chenetulipe](https://github.com/chenetulipe)** | 360 | +2401721 | -2336286 |
+| **[@chenetulipe](https://github.com/chenetulipe)** | 365 | +2417840 | -2351981 |
 | **[@claude](https://github.com/claude)** | 196 | +230819 | -8772 |
 | **[@Garloulou](https://github.com/Garloulou)** | 50 | +769 | -517 |
 | **[@github-actions[bot]](https://github.com/github-actions[bot])** | 50 | +652 | -652 |
@@ -87,6 +87,7 @@ Grâce à un robot (GitHub Action) qui tourne toutes les nuits, ce classement et
 | **[@nekorighthere](https://github.com/nekorighthere)** | 2 | +86 | -86 |
 | **[@chenetulipe2](https://github.com/chenetulipe2)** | 2 | +6 | -6 |
 | **[@Xeriam](https://github.com/Xeriam)** | 2 | +56 | -56 |
+| **[@IovWLordWarth](https://github.com/IovWLordWarth)** | 1 | +4 | -4 |
 | **[@MaelMinhAnh](https://github.com/MaelMinhAnh)** | 1 | +77 | -77 |
 | **[@Desseday](https://github.com/Desseday)** | 1 | +123 | -123 |
 | **[@renaclerican](https://github.com/renaclerican)** | 1 | +29 | -29 |
@@ -104,7 +105,7 @@ Grâce à un robot (GitHub Action) qui tourne toutes les nuits, ce classement et
 ```mermaid
 pie title Top 10 - Commits
     "HamzaKarrouchi" : 413
-    "chenetulipe" : 360
+    "chenetulipe" : 365
     "claude" : 196
     "Garloulou" : 50
     "github-actions[bot]" : 50
@@ -118,7 +119,7 @@ pie title Top 10 - Commits
 #### Lignes Ajoutées
 ```mermaid
 pie title Top 10 - Lignes Ajoutées
-    "chenetulipe" : 2401721
+    "chenetulipe" : 2417840
     "HamzaKarrouchi" : 258448
     "claude" : 230819
     "ArsenetheIV" : 10059
@@ -133,7 +134,7 @@ pie title Top 10 - Lignes Ajoutées
 #### Lignes Supprimées
 ```mermaid
 pie title Top 10 - Lignes Supprimées
-    "chenetulipe" : 2336286
+    "chenetulipe" : 2351981
     "HamzaKarrouchi" : 35647
     "ArsenetheIV" : 11358
     "claude" : 8772
