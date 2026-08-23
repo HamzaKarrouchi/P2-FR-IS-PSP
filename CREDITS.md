@@ -49,7 +49,7 @@ Grâce à un robot (GitHub Action) qui tourne toutes les nuits, ce classement et
 | Contributeur | 💾 Commits | ➕ Lignes Ajoutées | ➖ Lignes Supprimées |
 |:---|:---:|:---:|:---:|
 | **[@HamzaKarrouchi](https://github.com/HamzaKarrouchi)** | 413 | +258448 | -35647 |
-| **[@chenetulipe](https://github.com/chenetulipe)** | 365 | +2417840 | -2351981 |
+| **[@chenetulipe](https://github.com/chenetulipe)** | 373 | +2425276 | -2359417 |
 | **[@claude](https://github.com/claude)** | 196 | +230819 | -8772 |
 | **[@Garloulou](https://github.com/Garloulou)** | 50 | +769 | -517 |
 | **[@github-actions[bot]](https://github.com/github-actions[bot])** | 50 | +652 | -652 |
@@ -105,7 +105,7 @@ Grâce à un robot (GitHub Action) qui tourne toutes les nuits, ce classement et
 ```mermaid
 pie title Top 10 - Commits
     "HamzaKarrouchi" : 413
-    "chenetulipe" : 365
+    "chenetulipe" : 373
     "claude" : 196
     "Garloulou" : 50
     "github-actions[bot]" : 50
@@ -119,7 +119,7 @@ pie title Top 10 - Commits
 #### Lignes Ajoutées
 ```mermaid
 pie title Top 10 - Lignes Ajoutées
-    "chenetulipe" : 2417840
+    "chenetulipe" : 2425276
     "HamzaKarrouchi" : 258448
     "claude" : 230819
     "ArsenetheIV" : 10059
@@ -134,7 +134,7 @@ pie title Top 10 - Lignes Ajoutées
 #### Lignes Supprimées
 ```mermaid
 pie title Top 10 - Lignes Supprimées
-    "chenetulipe" : 2351981
+    "chenetulipe" : 2359417
     "HamzaKarrouchi" : 35647
     "ArsenetheIV" : 11358
     "claude" : 8772
